@@ -1,11 +1,11 @@
 /**
- * 
  * Author: Alan Garcia Garza
  * Class iD: 1212572164
  * Assignment 2
  * This Assignment was created to help us know how to upload in 
  * a repository like github or bit.
- * Adding program
+ * AddingMachine that adds subtracts and returns total and the opertion moves
+ * Repository: https://github.com/Alan-Garcia-Garza/cse360assign2
  * 
  */
 package cse360assign2;
