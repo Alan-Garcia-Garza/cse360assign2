@@ -12,25 +12,11 @@ package cse360assign2;
 
 //contains the function for the adding machine
 public class AddingMachine {
+	
 	//keeps track of total value
 	private int total;
 	//keeps track of the string 
 	private String totalString;
-	
-	//main method to be able to test code and make sure it works
-	public static void main(String[] args) {
-		AddingMachine addingMachine = new AddingMachine();
-		
-		addingMachine.add(4);
-		
-		addingMachine.subtract(2);
-		
-		addingMachine.add(5);
-		
-		System.out.print(addingMachine.toString()+"\n");
-		
-		System.out.print(addingMachine.getTotal()+"\n");
-	}
 	
 	// This method initialized the total number and total string
 	public AddingMachine () {
