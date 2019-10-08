@@ -27,6 +27,7 @@ public class AddingMachineTest {
 		AddingMachine addingMachine = new AddingMachine();
 		addingMachine.getTotal();
 		assertEquals(0,addingMachine.getTotal());
+		System.out.print(addingMachine.getTotal() + "\n");
 	}
 	
 	@Test
@@ -35,7 +36,8 @@ public class AddingMachineTest {
 		addingMachine.add(4);
 		addingMachine.subtract(2);
 		addingMachine.add(5);
-		assertEquals(7,addingMachine.getTotal());
+		assertEquals("0 + 4 - 2 + 5",addingMachine.toString());
+		System.out.print(addingMachine.toString());
 	}
 	
 	@Test
