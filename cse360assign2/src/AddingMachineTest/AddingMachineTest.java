@@ -18,14 +18,33 @@ public class AddingMachineTest {
 	@Test
 	public void subtract() {
 		AddingMachine addingMachine = new AddingMachine();
-		addingMachine.subtract(4);
+		addingMachine.subtract(5);
 		assertEquals(-5,addingMachine.getTotal());
 	}
+	
 	@Test
-	public void test() {
+	public void printTotal() {
+		AddingMachine addingMachine = new AddingMachine();
+		addingMachine.getTotal();
+		assertEquals(0,addingMachine.getTotal());
+	}
+	
+	@Test
+	public void getToString() {
 		AddingMachine addingMachine = new AddingMachine();
 		addingMachine.add(4);
-		assertEquals(4,addingMachine.getTotal());
+		addingMachine.subtract(2);
+		addingMachine.add(5);
+		assertEquals(7,addingMachine.getTotal());
 	}
+	
+	@Test
+	public void getClear() {
+		AddingMachine addingMachine = new AddingMachine();
+		addingMachine.clear();
+		
+	}
+	
+	
 
 }
