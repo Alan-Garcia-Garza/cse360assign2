@@ -17,36 +17,52 @@ public class AddingMachine {
 	//keeps track of the string 
 	private String totalString;
 	
+	//main method to be able to test code and make sure it works
 	public static void main(String[] args) {
 		AddingMachine addingMachine = new AddingMachine();
+		
 		addingMachine.add(4);
+		
 		addingMachine.subtract(2);
+		
 		addingMachine.add(5);
-		//addingMachine.getTotal();
-		//addingMachine.toString();
+		
 		System.out.print(addingMachine.toString()+"\n");
+		
 		System.out.print(addingMachine.getTotal()+"\n");
 	}
 	
+	// This method initialized the total number and total string
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 		totalString = "0";
 	}
+	
+	// This method returns the total 
 	public int getTotal () {
 		return total;
 	}
 	
+	// This method adds the value to the total.
 	public void add (int value) {
 		total = total + value;
+		//  Func.  adds the total string plus the + and the value to totalString
 		totalString = totalString + " + " + value;
 	}
+	
+	// This Method subtracts the value from total.
 	public void subtract (int value) {
 		total = total - value;
+	//  Func.  adds the total string plus the - and the value to totalString
 		totalString = totalString + " - " + value;
 	}
+	
+	// This method returns the total string with the operations.
 	public String toString () {
 		return totalString;
 		}
+	
+	// This method clears the total as well as the total string
 	public void clear() {
 		total=0;
 		totalString="0";
