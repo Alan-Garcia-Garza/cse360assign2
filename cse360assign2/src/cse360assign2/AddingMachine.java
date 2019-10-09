@@ -2,18 +2,18 @@
  * 
  * 
  * @author Alan Garcia Garza
- * Class iD: 1212572164
+ * @version 10/8/19
+ * Class iD: CSE 360 M 9:40 am
  * Assignment 2
- * This Assignment was created to help us know how to upload in 
- * a repository like github or bit.
- * AddingMachine that adds subtracts and returns total and the opertion moves
- * Repository: https://github.com/Alan-Garcia-Garza/cse360assign2
+ * 
+ * This assignment is a calculator that only adds and subctracts, and show total
+ * and operation moves
  * 
  */
 package cse360assign2;
 
 /**
- * contains the function for the adding machine
+ * Constructor for the addingMachine
  */
 public class AddingMachine {
 	
@@ -31,6 +31,7 @@ public class AddingMachine {
 	}
 	
 	/**
+	 * Returns total
 	 * @return total value
 	 */
 	public int getTotal () {
@@ -38,6 +39,7 @@ public class AddingMachine {
 	}
 	
 	/**
+	 * Adds to total
 	 * @parm adds the value to the total
 	 */
 	public void add (int value) {
@@ -48,8 +50,9 @@ public class AddingMachine {
 		totalString = totalString + " + " + value;
 	}
 	
-	/**This Method subtracts the value from total
-	 * 
+	/**
+	 * Subtrscts from total
+	 * @parm subtracts value from the total
 	 */
 	public void subtract (int value) {
 		
