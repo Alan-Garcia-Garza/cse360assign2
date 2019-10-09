@@ -1,5 +1,7 @@
 /**
- * Author: Alan Garcia Garza
+ * 
+ * 
+ * @author Alan Garcia Garza
  * Class iD: 1212572164
  * Assignment 2
  * This Assignment was created to help us know how to upload in 
