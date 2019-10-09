@@ -12,7 +12,9 @@
  */
 package cse360assign2;
 
-//contains the function for the adding machine
+/**
+ * contains the function for the adding machine
+ */
 public class AddingMachine {
 	
 	//keeps track of total value
@@ -20,37 +22,53 @@ public class AddingMachine {
 	//keeps track of the string 
 	private String totalString;
 	
-	// This method initialized the total number and total string
+	/**
+	 * This method initialized the total number and total string
+	 */
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
 		totalString = "0";
 	}
 	
-	// This method returns the total 
+	/**
+	 * @return total value
+	 */
 	public int getTotal () {
 		return total;
 	}
 	
-	// This method adds the value to the total.
+	/**
+	 * @parm adds the value to the total
+	 */
 	public void add (int value) {
+		
 		total = total + value;
+		
 		//  Func.  adds the total string plus the + and the value to totalString
 		totalString = totalString + " + " + value;
 	}
 	
-	// This Method subtracts the value from total.
+	/**This Method subtracts the value from total
+	 * 
+	 */
 	public void subtract (int value) {
+		
 		total = total - value;
-	//  Func.  adds the total string plus the - and the value to totalString
+		
+		//Func.  adds the total string plus the - and the value to totalString
 		totalString = totalString + " - " + value;
 	}
 	
-	// This method returns the total string with the operations.
+	/**This method returns the total string with the operations.
+	 * @return string of operations
+	 * */
 	public String toString () {
 		return totalString;
 		}
 	
-	// This method clears the total as well as the total string
+	/**
+	 * clears the total and totalString from values
+	 */
 	public void clear() {
 		total=0;
 		totalString="0";
