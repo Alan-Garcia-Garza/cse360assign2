@@ -64,9 +64,8 @@ public class AddingMachine {
 	}
 	
 	/**This method returns the total string with the operations.
-	 * 
 	 * @return string of operations
-	 * */
+	 */
 	public String toString () {
 		return totalString;
 		}
