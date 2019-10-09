@@ -14,6 +14,7 @@ package cse360assign2;
 
 /**
  * Constructor for the addingMachine
+ * @parm Constructior for AddingMachine
  */
 public class AddingMachine {
 	
